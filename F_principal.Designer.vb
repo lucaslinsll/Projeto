@@ -24,20 +24,23 @@ Partial Class F_principal
 	Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.CadastrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelatóriosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FaturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuáriosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaGeralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelatóriosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatórioGeralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatórioEspecíficoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.SairToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnCadClientes = New System.Windows.Forms.Button()
+        Me.btnLocacao = New System.Windows.Forms.Button()
+        Me.btnCadFerramentas = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,12 +61,48 @@ Partial Class F_principal
         Me.CadastrosToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
         Me.CadastrosToolStripMenuItem.Text = "&Cadastros"
         '
+        'ClientesToolStripMenuItem
+        '
+        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.ClientesToolStripMenuItem.Text = "Clientes"
+        '
+        'RegistrosToolStripMenuItem
+        '
+        Me.RegistrosToolStripMenuItem.Name = "RegistrosToolStripMenuItem"
+        Me.RegistrosToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.RegistrosToolStripMenuItem.Text = "Registros"
+        '
+        'FaturasToolStripMenuItem
+        '
+        Me.FaturasToolStripMenuItem.Name = "FaturasToolStripMenuItem"
+        Me.FaturasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.FaturasToolStripMenuItem.Text = "Faturas"
+        '
+        'UsuáriosToolStripMenuItem
+        '
+        Me.UsuáriosToolStripMenuItem.Name = "UsuáriosToolStripMenuItem"
+        Me.UsuáriosToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.UsuáriosToolStripMenuItem.Text = "Usuários"
+        '
         'ConsultasToolStripMenuItem
         '
         Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultaGeralToolStripMenuItem, Me.ConsultaToolStripMenuItem})
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
         Me.ConsultasToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
         Me.ConsultasToolStripMenuItem.Text = "Consultas"
+        '
+        'ConsultaGeralToolStripMenuItem
+        '
+        Me.ConsultaGeralToolStripMenuItem.Name = "ConsultaGeralToolStripMenuItem"
+        Me.ConsultaGeralToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.ConsultaGeralToolStripMenuItem.Text = "Consulta geral"
+        '
+        'ConsultaToolStripMenuItem
+        '
+        Me.ConsultaToolStripMenuItem.Name = "ConsultaToolStripMenuItem"
+        Me.ConsultaToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.ConsultaToolStripMenuItem.Text = "Consulta específica"
         '
         'RelatóriosToolStripMenuItem
         '
@@ -72,6 +111,18 @@ Partial Class F_principal
         Me.RelatóriosToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
         Me.RelatóriosToolStripMenuItem.Text = "Relatórios"
         '
+        'RelatórioGeralToolStripMenuItem
+        '
+        Me.RelatórioGeralToolStripMenuItem.Name = "RelatórioGeralToolStripMenuItem"
+        Me.RelatórioGeralToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.RelatórioGeralToolStripMenuItem.Text = "Relatório geral"
+        '
+        'RelatórioEspecíficoToolStripMenuItem
+        '
+        Me.RelatórioEspecíficoToolStripMenuItem.Name = "RelatórioEspecíficoToolStripMenuItem"
+        Me.RelatórioEspecíficoToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.RelatórioEspecíficoToolStripMenuItem.Text = "Relatório específico"
+        '
         'AjudaToolStripMenuItem
         '
         Me.AjudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairToolStripMenuItem, Me.ToolStripMenuItem1, Me.SairToolStripMenuItem1})
@@ -79,77 +130,58 @@ Partial Class F_principal
         Me.AjudaToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.AjudaToolStripMenuItem.Text = "Ajuda"
         '
-        'ClientesToolStripMenuItem
-        '
-        Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ClientesToolStripMenuItem.Text = "Clientes"
-        '
-        'RegistrosToolStripMenuItem
-        '
-        Me.RegistrosToolStripMenuItem.Name = "RegistrosToolStripMenuItem"
-        Me.RegistrosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.RegistrosToolStripMenuItem.Text = "Registros"
-        '
-        'FaturasToolStripMenuItem
-        '
-        Me.FaturasToolStripMenuItem.Name = "FaturasToolStripMenuItem"
-        Me.FaturasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.FaturasToolStripMenuItem.Text = "Faturas"
-        '
-        'UsuáriosToolStripMenuItem
-        '
-        Me.UsuáriosToolStripMenuItem.Name = "UsuáriosToolStripMenuItem"
-        Me.UsuáriosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.UsuáriosToolStripMenuItem.Text = "Usuários"
-        '
-        'ConsultaGeralToolStripMenuItem
-        '
-        Me.ConsultaGeralToolStripMenuItem.Name = "ConsultaGeralToolStripMenuItem"
-        Me.ConsultaGeralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ConsultaGeralToolStripMenuItem.Text = "Consulta geral"
-        '
-        'ConsultaToolStripMenuItem
-        '
-        Me.ConsultaToolStripMenuItem.Name = "ConsultaToolStripMenuItem"
-        Me.ConsultaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ConsultaToolStripMenuItem.Text = "Consulta específica"
-        '
-        'RelatórioGeralToolStripMenuItem
-        '
-        Me.RelatórioGeralToolStripMenuItem.Name = "RelatórioGeralToolStripMenuItem"
-        Me.RelatórioGeralToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.RelatórioGeralToolStripMenuItem.Text = "Relatório geral"
-        '
-        'RelatórioEspecíficoToolStripMenuItem
-        '
-        Me.RelatórioEspecíficoToolStripMenuItem.Name = "RelatórioEspecíficoToolStripMenuItem"
-        Me.RelatórioEspecíficoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.RelatórioEspecíficoToolStripMenuItem.Text = "Relatório específico"
-        '
         'SairToolStripMenuItem
         '
         Me.SairToolStripMenuItem.Name = "SairToolStripMenuItem"
-        Me.SairToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SairToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
         Me.SairToolStripMenuItem.Text = "Ajuda"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(102, 6)
         '
         'SairToolStripMenuItem1
         '
         Me.SairToolStripMenuItem1.Name = "SairToolStripMenuItem1"
-        Me.SairToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.SairToolStripMenuItem1.Size = New System.Drawing.Size(105, 22)
         Me.SairToolStripMenuItem1.Text = "Sair"
+        '
+        'btnCadClientes
+        '
+        Me.btnCadClientes.Location = New System.Drawing.Point(59, 133)
+        Me.btnCadClientes.Name = "btnCadClientes"
+        Me.btnCadClientes.Size = New System.Drawing.Size(124, 65)
+        Me.btnCadClientes.TabIndex = 1
+        Me.btnCadClientes.Text = "Cadastrar Cliente"
+        Me.btnCadClientes.UseVisualStyleBackColor = True
+        '
+        'btnLocacao
+        '
+        Me.btnLocacao.Location = New System.Drawing.Point(243, 133)
+        Me.btnLocacao.Name = "btnLocacao"
+        Me.btnLocacao.Size = New System.Drawing.Size(124, 65)
+        Me.btnLocacao.TabIndex = 2
+        Me.btnLocacao.Text = "Realizar Locação"
+        Me.btnLocacao.UseVisualStyleBackColor = True
+        '
+        'btnCadFerramentas
+        '
+        Me.btnCadFerramentas.Location = New System.Drawing.Point(420, 133)
+        Me.btnCadFerramentas.Name = "btnCadFerramentas"
+        Me.btnCadFerramentas.Size = New System.Drawing.Size(124, 65)
+        Me.btnCadFerramentas.TabIndex = 3
+        Me.btnCadFerramentas.Text = "Cadastrar Ferramenta"
+        Me.btnCadFerramentas.UseVisualStyleBackColor = True
         '
         'F_principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.SistemaDeFerramentas.My.Resources.Resources.menu
         Me.ClientSize = New System.Drawing.Size(611, 435)
+        Me.Controls.Add(Me.btnCadFerramentas)
+        Me.Controls.Add(Me.btnLocacao)
+        Me.Controls.Add(Me.btnCadClientes)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "F_principal"
@@ -178,4 +210,7 @@ Partial Class F_principal
     Friend WithEvents SairToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
     Friend WithEvents SairToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents btnCadClientes As Button
+    Friend WithEvents btnLocacao As Button
+    Friend WithEvents btnCadFerramentas As Button
 End Class

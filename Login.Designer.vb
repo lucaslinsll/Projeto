@@ -26,8 +26,8 @@ Partial Class F_login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LB_login = New System.Windows.Forms.Label()
-        Me.TB_usuario = New System.Windows.Forms.TextBox()
-        Me.TB_senha = New System.Windows.Forms.TextBox()
+        Me.txtLogin = New System.Windows.Forms.TextBox()
+        Me.txtSenha = New System.Windows.Forms.TextBox()
         Me.BTN_login = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -64,19 +64,20 @@ Partial Class F_login
         Me.LB_login.TabIndex = 1
         Me.LB_login.Text = "info"
         '
-        'TB_usuario
+        'txtLogin
         '
-        Me.TB_usuario.Location = New System.Drawing.Point(84, 144)
-        Me.TB_usuario.Name = "TB_usuario"
-        Me.TB_usuario.Size = New System.Drawing.Size(147, 20)
-        Me.TB_usuario.TabIndex = 2
+        Me.txtLogin.Location = New System.Drawing.Point(84, 144)
+        Me.txtLogin.Name = "txtLogin"
+        Me.txtLogin.Size = New System.Drawing.Size(147, 20)
+        Me.txtLogin.TabIndex = 2
         '
-        'TB_senha
+        'txtSenha
         '
-        Me.TB_senha.Location = New System.Drawing.Point(84, 209)
-        Me.TB_senha.Name = "TB_senha"
-        Me.TB_senha.Size = New System.Drawing.Size(147, 20)
-        Me.TB_senha.TabIndex = 3
+        Me.txtSenha.Location = New System.Drawing.Point(84, 209)
+        Me.txtSenha.Name = "txtSenha"
+        Me.txtSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtSenha.Size = New System.Drawing.Size(147, 20)
+        Me.txtSenha.TabIndex = 3
         '
         'BTN_login
         '
@@ -99,8 +100,8 @@ Partial Class F_login
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(508, 403)
         Me.Controls.Add(Me.BTN_login)
-        Me.Controls.Add(Me.TB_senha)
-        Me.Controls.Add(Me.TB_usuario)
+        Me.Controls.Add(Me.txtSenha)
+        Me.Controls.Add(Me.txtLogin)
         Me.Controls.Add(Me.LB_login)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -115,7 +116,7 @@ Partial Class F_login
     Friend WithEvents Label1 As Label
 	Friend WithEvents Label2 As Label
 	Friend WithEvents LB_login As Label
-	Friend WithEvents TB_usuario As TextBox
-	Friend WithEvents TB_senha As TextBox
+	Friend WithEvents txtLogin As TextBox
+	Friend WithEvents txtSenha As TextBox
 	Friend WithEvents BTN_login As Button
 End Class
