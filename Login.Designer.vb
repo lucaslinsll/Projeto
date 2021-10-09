@@ -29,6 +29,7 @@ Partial Class F_login
         Me.txtLogin = New System.Windows.Forms.TextBox()
         Me.txtSenha = New System.Windows.Forms.TextBox()
         Me.BTN_login = New System.Windows.Forms.Button()
+        Me.linkCadUsuario = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
         'Label1
@@ -93,12 +94,24 @@ Partial Class F_login
         Me.BTN_login.TabIndex = 4
         Me.BTN_login.UseVisualStyleBackColor = False
         '
+        'linkCadUsuario
+        '
+        Me.linkCadUsuario.AutoSize = True
+        Me.linkCadUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.linkCadUsuario.Location = New System.Drawing.Point(81, 343)
+        Me.linkCadUsuario.Name = "linkCadUsuario"
+        Me.linkCadUsuario.Size = New System.Drawing.Size(91, 13)
+        Me.linkCadUsuario.TabIndex = 5
+        Me.linkCadUsuario.TabStop = True
+        Me.linkCadUsuario.Text = "Cadastrar Usuário"
+        '
         'F_login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(508, 403)
+        Me.Controls.Add(Me.linkCadUsuario)
         Me.Controls.Add(Me.BTN_login)
         Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.txtLogin)
@@ -119,4 +132,5 @@ Partial Class F_login
 	Friend WithEvents txtLogin As TextBox
 	Friend WithEvents txtSenha As TextBox
 	Friend WithEvents BTN_login As Button
+    Friend WithEvents linkCadUsuario As LinkLabel
 End Class

@@ -34,4 +34,8 @@ Public Class F_login
     Private Sub F_login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub linkCadUsuario_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkCadUsuario.LinkClicked
+        Cadastro_Usuario.Show()
+    End Sub
 End Class
