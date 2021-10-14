@@ -13,13 +13,16 @@ Public Class F_login
             reader = cmdUser.ExecuteReader
 
             If reader.Read = True Then
-                MsgBox("Bem vindo, " + txtLogin.Text)
+                MsgBox("Bem vindo(ª), " + txtLogin.Text)
 
                 Me.Hide()
                 F_principal.Show()
+                fechar()
 
 
             Else
+                fechar()
+                abrir()
                 MsgBox("Usuário ou senha incorretos! ")
 
             End If
