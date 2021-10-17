@@ -41,3 +41,4 @@ C:\Users\GISELLE\Source\Repos\Projeto\obj\Debug\SistemaDeFerramentas.exe
 C:\Users\GISELLE\Source\Repos\Projeto\obj\Debug\SistemaDeFerramentas.xml
 C:\Users\GISELLE\Source\Repos\Projeto\obj\Debug\SistemaDeFerramentas.pdb
 C:\Users\GISELLE\Source\Repos\Projeto\obj\Debug\SistemaDeFerramentas.Cadastro_Usuario.resources
+C:\Users\GISELLE\Source\Repos\Projeto\obj\Debug\SistemaDeFerramentas.Cadastro_Ferramentas.resources

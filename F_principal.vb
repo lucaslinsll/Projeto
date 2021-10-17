@@ -13,6 +13,7 @@
 
     Private Sub F_principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnCadClientes.Click
@@ -20,6 +21,6 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnCadFerramentas.Click
-
+        Cadastro_Ferramentas.Show()
     End Sub
 End Class

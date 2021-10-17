@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Cadastros",
+    "\\Projeto-main",
+    "\\Projeto-main\\Cadastros",
+    "\\Resources"
   ],
-  "SelectedNode": "\\Conexao.vb",
+  "SelectedNode": "\\Cadastro_Ferramentas.vb",
   "PreviewInSolutionExplorer": false
 }
