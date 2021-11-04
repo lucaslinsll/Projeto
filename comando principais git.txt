@@ -1,0 +1,11 @@
+------------------------------------------
+colocando arquivo no diretório
+------------------------------------------
+git add --all {ou nomearquivo}
+git commit -m "mensagem"
+git push origin main
+------------------------------------------
+baixar repositório local
+------------------------------------------
+git fetch  \\baixa arquivos main
+git merge  \\atualiza repositório local
