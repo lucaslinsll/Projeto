@@ -22,6 +22,7 @@ Partial Class F_principal
 	'Não o modifique usando o editor de códigos.
 	<System.Diagnostics.DebuggerStepThrough()> _
 	Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(F_principal))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.CadastrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -183,6 +184,7 @@ Partial Class F_principal
         Me.Controls.Add(Me.btnLocacao)
         Me.Controls.Add(Me.btnCadClientes)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "F_principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
