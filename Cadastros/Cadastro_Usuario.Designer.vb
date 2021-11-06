@@ -84,6 +84,7 @@ Partial Class Cadastro_Usuario
         Me.Controls.Add(Me.lblLogin)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Cadastro_Usuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastrar Usuário"
         Me.ResumeLayout(False)
         Me.PerformLayout()

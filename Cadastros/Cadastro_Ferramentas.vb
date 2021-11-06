@@ -174,7 +174,7 @@ Public Class Cadastro_Ferramentas
 
                 cmd = New MySqlCommand(sql, con)
                 cmd.ExecuteNonQuery()
-                MsgBox("Dados editados com sucesso!")
+                MsgBox("Registros editados com sucesso!")
             Catch ex As Exception
                 MsgBox("Erro ao editar!" + ex.Message)
             End Try
@@ -182,6 +182,15 @@ Public Class Cadastro_Ferramentas
             btnEditar.Enabled = False
             btnExcluir.Enabled = False
             txtDescricao.Text = ""
+            txtBuscar.Text = ""
+            txtCodigo.Text = ""
+            txtCod_estoque.Text = ""
+            txtCod_morador.Text = ""
+            txtMarca.Text = ""
+            cbmDisp.Text = ""
+            cbmEstado.Text = ""
+            cbmTipo.Text = ""
+            Me.txtDescricao.Select()
             Listar()
 
         Else
@@ -201,13 +210,23 @@ Public Class Cadastro_Ferramentas
                     sql = "DELETE FROM cadastro_ferramenta where cod_ferramenta = '" & txtCodigo.Text & "' "
                     cmd = New MySqlCommand(sql, con)
                     cmd.ExecuteNonQuery()
-                    MsgBox("Dados excluido com sucesso!")
+                    MsgBox("Registro excluido com sucesso!")
                 Catch ex As Exception
-                    MsgBox("Erro ao excluir !" + ex.Message)
+                    MsgBox("Erro ao excluir o registro !" + ex.Message)
                 End Try
                 btnEditar.Enabled = False
                 btnExcluir.Enabled = False
                 txtDescricao.Text = ""
+                txtBuscar.Text = ""
+                txtCodigo.Text = ""
+                txtCod_estoque.Text = ""
+                txtCod_morador.Text = ""
+                txtMarca.Text = ""
+                cbmDisp.Text = ""
+                cbmEstado.Text = ""
+                cbmTipo.Text = ""
+                txtDescricao.Show()
+                Me.txtDescricao.Select()
                 Listar()
             End If
         Else

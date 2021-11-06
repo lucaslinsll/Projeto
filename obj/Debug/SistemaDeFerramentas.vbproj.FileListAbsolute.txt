@@ -87,7 +87,6 @@ C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\bin\Debug\K4os.Hash.xxHash.
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\bin\Debug\MySql.Data.xml
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.vbproj.AssemblyReference.cache
-C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.F_clientes.resources
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.Cadastro_Ferramentas.resources
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.Cadastro_Usuario.resources
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.F_principal.resources
@@ -99,3 +98,4 @@ C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramen
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.exe
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.xml
 C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.pdb
+C:\Users\Lucas\Desktop\Projeto\Nova pasta\Atualizado\obj\Debug\SistemaDeFerramentas.Cadastro_moradores.resources

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Out-2021 às 08:01
+-- Tempo de geração: 06-Nov-2021 às 08:59
 -- Versão do servidor: 10.4.21-MariaDB
 -- versão do PHP: 8.0.11
 
@@ -24,44 +24,39 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastros_ferramentas`
+-- Estrutura da tabela `cadastro_ferramenta`
 --
 
-CREATE TABLE `cadastros_ferramentas` (
-  `id_ferramenta` int(11) NOT NULL,
-  `ferramenta` varchar(60) NOT NULL
+CREATE TABLE `cadastro_ferramenta` (
+  `cod_ferramenta` int(5) NOT NULL,
+  `desc_ferramenta` varchar(160) NOT NULL,
+  `marca_ferramenta` varchar(60) NOT NULL,
+  `tipo_ferramenta` varchar(11) NOT NULL,
+  `estado_ferramenta` varchar(11) NOT NULL,
+  `disponibilidade` varchar(13) NOT NULL,
+  `cod_local` int(4) NOT NULL,
+  `cod_morador` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `cadastros_ferramentas`
---
-
-INSERT INTO `cadastros_ferramentas` (`id_ferramenta`, `ferramenta`) VALUES
-(2, 'martelo'),
-(3, 'furadeira'),
-(4, 'giselle'),
-(5, 'lll'),
-(6, 'makita');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `cadastros_ferramentas`
+-- Índices para tabela `cadastro_ferramenta`
 --
-ALTER TABLE `cadastros_ferramentas`
-  ADD PRIMARY KEY (`id_ferramenta`);
+ALTER TABLE `cadastro_ferramenta`
+  ADD PRIMARY KEY (`cod_ferramenta`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `cadastros_ferramentas`
+-- AUTO_INCREMENT de tabela `cadastro_ferramenta`
 --
-ALTER TABLE `cadastros_ferramentas`
-  MODIFY `id_ferramenta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+ALTER TABLE `cadastro_ferramenta`
+  MODIFY `cod_ferramenta` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
