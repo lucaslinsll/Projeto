@@ -1,0 +1,16 @@
+
+------------------------------------------
+colocando arquivo no diretório
+------------------------------------------
+git init
+git add --all {ou nomearquivo}
+git commit -m "mensagem"
+git branch -M main
+git remote add origin https://github.com/lucaslinsll/Projeto
+git push -u origin main
+------------------------------------------
+baixar repositório local
+------------------------------------------
+git fetch  \\baixa arquivos main
+git merge  \\atualiza repositório local
+
